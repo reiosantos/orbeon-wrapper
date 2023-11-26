@@ -1,7 +1,7 @@
 FROM tomcat:9
 
 RUN apt-get update -y
-RUN apt-get install nano lsof -y
+RUN apt-get install nano lsof unzip -y
 RUN apt-get install gettext-base -y
 
 LABEL maintainer="ronireiosantos@gmail.com"

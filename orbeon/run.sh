@@ -15,6 +15,7 @@ replace_env_vars() {
     envsubst < ./resources/config/log4j.xml > ${ORBEON_RESOURCES}/config/log4j.xml
     envsubst < ./resources/config/properties-local.xml > ${ORBEON_RESOURCES}/config/properties-local.xml
     envsubst < ./resources/config/form-builder-permissions.xml > ${ORBEON_RESOURCES}/config/form-builder-permissions.xml
+    cp ./resources/config/license.xml ${ORBEON_RESOURCES}/config/license.xml
 }
 
 replace_env_vars
